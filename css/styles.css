@@ -128,3 +128,31 @@ a:hover {
   margin: 10px 15px;
   text-align: left;
 }
+
+/* Responsive */
+
+@media screen and (max-width:768px) {
+  .card-div {
+    display: inline-block;
+  }
+  .top-div {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+  .karma {
+    margin-bottom: 1.5em;
+  }
+}
+
+@media screen and (max-width:460px) {
+  .card-div {
+    display: inline-block;
+  }
+  .top-div {
+    width: 100%;
+    margin-bottom: 1.5em;
+  }
+  .karma {
+    margin-bottom: 1.5em;
+  }
+}
