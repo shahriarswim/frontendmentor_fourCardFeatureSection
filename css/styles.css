@@ -12,6 +12,7 @@ h3 {
 
 p {
   color: hsl(229, 6%, 66%);
+  font-weight: 400;
 }
 
 a {
@@ -43,28 +44,25 @@ a:hover {
 }
 
 .card-div {
-  margin: 30px auto 0 auto;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .supervisor {
-  display: inline-block;
-  position: relative;
+  grid-row: 2/4;
+  grid-column: 1;
   border-top: 3px solid hsl(180, 62%, 55%);
   border-radius: 5px;
   height: 230px;
   width: 350px;
   box-shadow: 0px 5px 10px hsl(229, 6%, 66%);
-  margin-left: 0px;
+  margin: auto 0 auto auto;
 }
 
 .supervisor2 {
   margin: 10px 15px;
   text-align: left;
-}
-
-.inline-block {
-  display: inline-block;
-  margin: 20px 20px 20px 20px;
 }
 
 .supervisor-img {
@@ -84,12 +82,14 @@ a:hover {
 }
 
 .team-builder {
+  grid-row: 1/3;
+  grid-column: 2;
+  margin: 1.5rem auto;
   border-top: 3px solid hsl(0, 78%, 62%);
   border-radius: 5px;
   height: 230px;
   width: 350px;
   box-shadow: 0px 5px 10px hsl(229, 6%, 66%);
-  margin-bottom: 20px;
 }
 
 .team-builder2 {
@@ -98,6 +98,9 @@ a:hover {
 }
 
 .karma {
+  grid-row: 3/5;
+  grid-column: 2;
+  margin: auto;
   border-top: 3px solid hsl(34, 97%, 64%);
   border-radius: 5px;
   height: 230px;
@@ -111,13 +114,14 @@ a:hover {
 }
 
 .calculator {
-  display: inline-block;
+  grid-row: 2/4;
+  grid-column: 3;
   border-top: 3px solid hsl(212, 86%, 64%);
   border-radius: 5px;
   height: 230px;
   width: 350px;
   box-shadow: 0px 5px 10px hsl(229, 6%, 66%);
-  margin-left: 0px;
+  margin: auto auto auto 0;
 }
 
 .calculator2 {
